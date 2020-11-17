@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Татьяна Рохлова](https://up.htmlacademy.ru/adaptive/21/user/1567473).
-* Наставник: `Неизвестно`.
+- Студент: [Татьяна Рохлова](https://up.htmlacademy.ru/adaptive/21/user/1567473).
+- Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
