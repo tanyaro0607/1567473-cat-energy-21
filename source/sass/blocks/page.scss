@@ -20,7 +20,6 @@
 //Header
 .page-header {
   color: $black;
-  font-family: @font-face;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -34,7 +33,6 @@
 }
 
 .advertise__title {
-  font-family: @font-face;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -43,7 +41,6 @@
 //programs
 .programs-title {
   color: $black;
-  font-family: @font-face;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -61,7 +58,6 @@
 }
 
 .stats__title {
-  font-family: @font-face;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -70,7 +66,6 @@
 
 //principles
 .principles__title {
-  font-family: @font-face;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -79,7 +74,6 @@
 
 //contacts
 .location__invitation {
-  font-family: @font-face;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -89,4 +83,65 @@
 
 .page-footer {
   background-color: $grey;
+}
+
+//form
+.registration {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.registration ::placeholder {
+  text-transform: uppercase;
+}
+
+.registration__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+}
+
+.registration__block-title {
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.registration__optional {
+  color: $black;
+}
+
+.registration__list {
+  text-transform: uppercase;
+}
+
+.goals__list {
+  text-transform: uppercase;
+}
+
+.contacts__item {
+  text-transform: uppercase;
+}
+
+.optional__list {
+  text-transform: uppercase;
+}
+
+.registration__sending__button {
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $green;
+  padding: 7px 44px;
+  border: none;
+}
+
+.comments__slogan {
+  text-transform: uppercase;
+}
+
+.location {
+  background-color: $grey;
+  padding: 19px 34px 19px 16px;
 }
