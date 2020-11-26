@@ -1,0 +1,92 @@
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: "Arial", "Oswald", sans-serif;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background-color: $white;
+  color: #444444;
+}
+
+//Header
+.page-header {
+  color: $black;
+  font-family: @font-face;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+//advertise
+.advertise__wrapper {
+  background-color: $green;
+  color: $white;
+}
+
+.advertise__title {
+  font-family: @font-face;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+//programs
+.programs-title {
+  color: $black;
+  font-family: @font-face;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.programs-list__item {
+  background-color: $lightgrey;
+  margin: 20px;
+}
+
+//stats
+.stats {
+  background-color: $lightgrey;
+}
+
+.stats__title {
+  font-family: @font-face;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $black;
+}
+
+//principles
+.principles__title {
+  font-family: @font-face;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $black;
+}
+
+//contacts
+.location__invitation {
+  font-family: @font-face;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  background-color: $grey;
+}
