@@ -26,6 +26,10 @@
   text-transform: uppercase;
 }
 
+.main-nav__list {
+  list-style: none;
+}
+
 //advertise
 .advertise__wrapper {
   background-color: $green;
@@ -144,4 +148,41 @@
 .location {
   background-color: $grey;
   padding: 19px 34px 19px 16px;
+}
+
+//catalog
+.catalog__order {
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $green;
+  padding: 10px 109px;
+  border: none;
+  text-decoration: none;
+}
+
+.catalog__show {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $grey;
+  padding: 20px 94px;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog__item {
+  list-style: none;
+}
+
+.additional__list {
+  list-style: none;
+}
+
+.gift {
+  margin: 20px 39px 20px 35px;
+  background-color: $green;
+  color: $white;
 }
