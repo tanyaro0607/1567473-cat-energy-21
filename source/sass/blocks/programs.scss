@@ -1,0 +1,24 @@
+.programs-title {
+  color: $black;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.programs-list__item {
+  background-color: $lightgrey;
+  margin: 20px;
+}
+
+.programs__details {
+  color: $black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.programs-list {
+  list-style: none;
+}
