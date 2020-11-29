@@ -4,11 +4,11 @@
 }
 
 .catalog__titte {
-  width: 36px;
-  height: 36px;
+  font-size: 36px;
+  line-height: 36px;
 }
 
-.catalog__order {
+.catalog-item__order {
   margin: 13px 0 25px 0;
 }
 
@@ -16,11 +16,13 @@
   color: $darkgrey-special;
 }
 
-.catalog__item {
+.catalog__list {
   list-style: none;
 }
 
-.catalog__product-name {
+.catalog-item__product-name {
   color: $darkgrey-special;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
 }
