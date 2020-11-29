@@ -1,0 +1,33 @@
+.section-title {
+  color: $black;
+}
+
+.catalog__order {
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $green;
+  padding: 10px 109px;
+  border: none;
+  text-decoration: none;
+}
+
+.catalog__show {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $grey;
+  padding: 20px 94px;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog__item {
+  list-style: none;
+}
+
+.catalog__product-name {
+  color: $darkgrey-special;
+}
