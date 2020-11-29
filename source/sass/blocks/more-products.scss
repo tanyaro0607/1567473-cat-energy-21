@@ -1,0 +1,31 @@
+.more-products__block {
+  padding: 23px 0 21px 0;
+}
+
+.more-products__button {
+  margin: 21px 0 25px 0;
+}
+
+.button__show-all {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $grey;
+  padding: 20px 94px;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.more-products__informatiom {
+  font-size: 12px;
+  line-height: 14px;
+  color: $darkgrey-special;
+}
+
+.more-products__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}

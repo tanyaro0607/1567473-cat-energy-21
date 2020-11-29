@@ -46,7 +46,7 @@
   </header>
   <main class="page-main">
     <section class="catalog">
-      <h2 class="section-title">Каталог продукции</h2>
+      <h2 class="catalog__titte section-title">Каталог продукции</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
           <h3 class="catalog__product-name">Cat Energy Pro 500 г</h3>
@@ -59,7 +59,9 @@
               <dt class="quality__option">Цена</dt>
               <dd class="quality__description">700 р.</dd>
             </dl>
-            <a class="catalog__order" href="#">Заказать</a>
+            <div class="catalog__order order">
+            <a class="order__button" href="#">Заказать</a>
+          </div>
         </li>
         <li class="catalog__item">
           <h3 class="catalog__product-name">Cat Energy Pro 1000 г</h3>
@@ -73,7 +75,9 @@
             <dt class="quality__option"> Цена</dt>
             <dd class="quality__description">1000 р.</dd>
           </dl>
-          <a class="catalog__order" href="#">Заказать</a>
+          <div class="catalog__order order">
+            <a class="order__button" href="#">Заказать</a>
+          </div>
         </li>
         <li class="catalog__item">
           <h3 class="catalog__product-name">Cat Energy Pro 500 г</h3>
@@ -86,7 +90,9 @@
             <dt class="quality__option">Цена</dt>
             <dd class="quality__description">700 р.</dd>
           </dl>
-          <a class="catalog__order" href="#">Заказать</a>
+          <div class="catalog__order order">
+            <a class="order__button" href="#">Заказать</a>
+          </div>
         </li>
         <li class="catalog__item">
           <h3 class="catalog__product-name">Cat Energy Pro 1000 г</h3>
@@ -99,7 +105,9 @@
             <dt class="quality__option">Цена</dt>
             <dd class="quality__description">1000 р.</dd>
           </dl>
-          <a class="catalog__order" href="#">Заказать</a>
+          <div class="catalog__order order">
+            <a class="order__button" href="#">Заказать</a>
+          </div>
         </li>
         <li class="catalog__item">
           <h3 class="catalog__product-name">Cat Energy Slim 500 г</h3>
@@ -112,7 +120,9 @@
             <dt class="quality__option">Цена</dt>
             <dd class="quality__description">400 р.</dd>
           </dl>
-          <a class="catalog__order" href="#">Заказать</a>
+          <div class="catalog__order order">
+            <a class="order__button" href="#">Заказать</a>
+          </div>
         </li>
         <li class="catalog__item">
           <h3 class="catalog__product-name">Cat Energy Slim 1000 г</h3>
@@ -125,7 +135,9 @@
             <dt class="quality__option">Цена</dt>
             <dd class="quality__description">700 р.</dd>
           </dl>
-          <a class="catalog__order" href="#">Заказать</a>
+          <div class="catalog__order order">
+            <a class="order__button" href="#">Заказать</a>
+          </div>
         </li>
         <li class="catalog__item">
           <h3 class="catalog__product-name">Cat Energy Slim 500 г</h3>
@@ -138,17 +150,23 @@
             <dt class="quality__option">Цена</dt>
             <dd class="quality__description">500 р.</dd>
           </dl>
-          <a class="catalog__order" href="#">Заказать</a>
+          <div class="catalog__order order">
+            <a class="order__button" href="#">Заказать</a>
+          </div>
         </li>
-        <li class="catalog__item">
-          <p>Показать еще 100500 товаров</p>
-          <p>На самом деле вкусов гораздо больше!</p>
-          <a class="catalog__show" href="#">Показать все</a>
+        <li class="catalog__item catalog__more-products more-products ">
+          <div class="more-products__block">
+          <p class="more-products__slogan">Показать еще 100500 товаров</p>
+          <p class="more-products__informatiom">На самом деле вкусов гораздо больше!</p>
+          </div>
+          <div class="more-products__button button">
+          <a class="button__show-all" href="#">Показать все</a>
+        </div>
         </li>
       </ul>
     </section>
     <section class="additional">
-      <h2 class="section-title">Дополнительные товары</h2>
+      <h2 class="additional__title section-title">Дополнительные товары</h2>
       <ul class="additional__list">
         <li class="additional__item">
           <h3 class="additional__product-name">Сахарозаменитель</h3>
@@ -156,7 +174,9 @@
             <dt class="parameter__size">1 упаковка(100 г)</dt>
             <dd class="parameter__price">200 р</dd>
             </dl>
-            <a class="additional__order" href="#">Заказать</a>
+            <div class="additional__order order">
+              <a class="order__button" href="#">Заказать</a>
+            </div>
         </li>
         <li class="additional__item">
           <h3 class="additional__product-name">Питьевая вода</h3>
@@ -164,7 +184,9 @@
             <dt class="parameter__size">5 литров</dt>
             <dd class="parameter__price">50 р</dd>
             </dl>
-            <a class="additional__order" href="#">Заказать</a>
+            <div class="additional__order order">
+              <a class="order__button" href="#">Заказать</a>
+            </div>
         </li>
         <li class="additional__item">
           <h3 class="additional__product-name">Молоко</h3>
@@ -172,7 +194,9 @@
             <dt class="parameter__size">1 литр</dt>
             <dd class="parameter__price">100 р</dd>
             </dl>
-            <a class="additional__order" href="#">Заказать</a>
+            <div class="additional__order order">
+              <a class="order__button" href="#">Заказать</a>
+            </div>
         </li>
         <li class="additional__item">
           <h3 class="additional__product-name">Витамины</h3>
@@ -180,7 +204,9 @@
             <dt class="parameter__size">1 упаковка(30 г)</dt>
             <dd class="parameter__price">300 р</dd>
             </dl>
-            <a class="additional__order" href="#">Заказать</a>
+            <div class="additional__order order">
+              <a class="order__button" href="#">Заказать</a>
+            </div>
         </li>
       </ul>
     </section>

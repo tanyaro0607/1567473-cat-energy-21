@@ -1,27 +1,19 @@
 .section-title {
   color: $black;
+  margin-left: 20px;
+}
+
+.catalog__titte {
+  width: 36px;
+  height: 36px;
 }
 
 .catalog__order {
-  color: $white;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: $green;
-  padding: 10px 109px;
-  border: none;
-  text-decoration: none;
+  margin: 13px 0 25px 0;
 }
 
-.catalog__show {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: $grey;
-  padding: 20px 94px;
-  border: none;
-  text-decoration: none;
-  color: inherit;
+.quality {
+  color: $darkgrey-special;
 }
 
 .catalog__item {
@@ -30,4 +22,5 @@
 
 .catalog__product-name {
   color: $darkgrey-special;
+  text-transform: uppercase;
 }

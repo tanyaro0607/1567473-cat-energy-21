@@ -1,12 +1,5 @@
-.additional__order {
-  color: $white;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: $green;
-  padding: 10px 109px;
-  border: none;
-  text-decoration: none;
+.additional__title {
+  padding: 25px 0 36px 0;
 }
 
 .additional__list {
@@ -15,4 +8,6 @@
 
 .additional__product-name {
   color: $darkgrey-special;
+  text-transform: uppercase;
+  padding-top: 13px;
 }
