@@ -14,7 +14,7 @@
   min-height: 100%;
   margin: 0;
   background-color: $white;
-  color: #444444;
+  color: $darkgrey;
 }
 
 //Header
@@ -24,52 +24,11 @@
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-//advertise
-.advertise__wrapper {
-  background-color: $green;
-  color: $white;
-}
-
-.advertise__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-}
-
-//programs
-.programs-title {
-  color: $black;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.programs-list__item {
-  background-color: $lightgrey;
-  margin: 20px;
-}
-
-//stats
-.stats {
-  background-color: $lightgrey;
-}
-
-.stats__title {
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
-  color: $black;
-}
-
-//principles
-.principles__title {
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
-  color: $black;
+.site-list {
+  list-style: none;
 }
 
 //contacts
@@ -81,66 +40,16 @@
   text-transform: uppercase;
 }
 
+//Footer
 .page-footer {
   background-color: $grey;
 }
 
-//form
-.registration {
-  font-size: 16px;
-  line-height: 18px;
+.social__list {
+  list-style: none;
 }
 
-.registration ::placeholder {
-  text-transform: uppercase;
-}
-
-.registration__title {
-  font-size: 36px;
-  line-height: 36px;
-  color: $black;
-}
-
-.registration__block-title {
-  font-size: 24px;
-  line-height: 26px;
-  color: $black;
-}
-
-.registration__optional {
-  color: $black;
-}
-
-.registration__list {
-  text-transform: uppercase;
-}
-
-.goals__list {
-  text-transform: uppercase;
-}
-
-.contacts__item {
-  text-transform: uppercase;
-}
-
-.optional__list {
-  text-transform: uppercase;
-}
-
-.registration__sending__button {
-  color: $white;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: $green;
-  padding: 7px 44px;
-  border: none;
-}
-
-.comments__slogan {
-  text-transform: uppercase;
-}
-
+//contacts
 .location {
   background-color: $grey;
   padding: 19px 34px 19px 16px;
