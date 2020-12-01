@@ -14,7 +14,7 @@
   min-height: 100%;
   margin: 0;
   background-color: $white;
-  color: #444444;
+  color: $darkgrey;
 }
 
 //Header
@@ -47,4 +47,10 @@
 
 .social__list {
   list-style: none;
+}
+
+//contacts
+.location {
+  background-color: $grey;
+  padding: 19px 34px 19px 16px;
 }
