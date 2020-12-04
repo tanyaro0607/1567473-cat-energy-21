@@ -4,11 +4,34 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .programs-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programs-list__item {
   background-color: $lightgrey;
-  margin: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
 
 .programs__details {
@@ -21,4 +44,49 @@
 
 .programs-list {
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .principles-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .principles-list {
+    display: flex;
+  }
+}
+
+.principles-list__health::before {
+  content: "";
+  background: url("../img/tree.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.principles-list__water::before {
+  content: "";
+  background: url("../img/water.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.principles-list__dish::before {
+  content: "";
+  background: url("../img/dish.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.principles-list__time::before {
+  content: "";
+  background: url("../img/time.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
 }

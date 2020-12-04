@@ -1,5 +1,12 @@
 .stats {
   background-color: $lightgrey;
+  padding: 0 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .stats {
+    display: flex;
+  }
 }
 
 .stats__title {
@@ -7,4 +14,72 @@
   line-height: 40px;
   font-weight: 400;
   color: $black;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .stats__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.slider {
+  width: 311px;
+  height: 232px;
+  content: "";
+  background: url("../img/cat-before.jpg") no-repeat;
+  position: relative;
+  display: block;
+  padding: 0;
+  top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.stats__number {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", sans-serif;
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.stats__cost {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__cost {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

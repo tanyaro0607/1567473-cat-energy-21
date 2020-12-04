@@ -3,8 +3,29 @@
   line-height: 40px;
   font-weight: 400;
   color: $black;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .principles__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .principles-list {
   list-style: none;
+}
+
+@media (min-width: $desktop-width) {
+  .programs-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .principles__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

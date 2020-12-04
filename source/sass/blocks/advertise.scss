@@ -1,18 +1,105 @@
+.advertise {
+  font-family: "Oswald", sans-serif;
+}
+
 .advertise__wrapper {
   background-color: $green;
   color: $white;
+  margin-bottom: 138px;
+  padding-bottom: 164px;
+}
+
+@media (min-width: $tablet-width) {
+  .advertise__wrapper {
+    background-color: $white;
+  }
 }
 
 .advertise__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  color: $white;
+  padding-top: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .advertise__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
+}
+
+.advertise__slogan {
+  text-transform: uppercase;
+  padding-left: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .advertise__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
 }
 
 .advertise__choose-program {
+  font-size: 14px;
+  line-height: 18px;
   padding: 7px 44px;
   color: $white;
   background-color: $green;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advertise__button {
+    position: absolute;
+    top: 370px;
+    padding-left: 83px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advertise__wrapper {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advertise__wrapper {
+    margin-bottom: 0;
+  }
+}
+
+.advertise__wrapper::after {
+  content: "";
+  background: url("../img/index-can-mobile.png") no-repeat;
+  width: 280px;
+  height: 270px;
+  display: block;
+  position: absolute;
+  top: 300px;
+}
+
+@media (min-width: $tablet-width) {
+  .advertise__wrapper::after {
+    width: 709px;
+    height: 609px;
+    content: "";
+    background: url("../img/index-can-tablet.png") no-repeat;
+    position: relative;
+    display: block;
+    padding: 0;
+    top: 0;
+  }
 }

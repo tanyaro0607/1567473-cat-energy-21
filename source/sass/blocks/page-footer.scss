@@ -1,0 +1,23 @@
+//Footer
+.page-footer {
+  background-color: $grey;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  flex-direction: space-between;
+}
+
+//contacts
+.location {
+  background-color: $grey;
+  padding: 19px 34px 19px 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: space-between;
+  }
+}
