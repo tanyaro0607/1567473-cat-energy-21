@@ -5,6 +5,15 @@
   font-weight: 400;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.programs__wrapper {
+  margin: 30px 20px 20px 20px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,24 +23,31 @@
   }
 }
 
+.programs__description {
+  padding-bottom: 19px;
+}
+
 @media (min-width: $tablet-width) {
   .programs__description {
     font-size: 16px;
     line-height: 24px;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .programs-list__item {
+  width: 100%;
   background-color: $lightgrey;
-  margin-right: 20px;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
-  @media (min-width: $tablet-width) {
-    margin-right: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 80px;
-  }
+.programs-list__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .programs__details {
@@ -44,49 +60,44 @@
 
 .programs-list {
   list-style: none;
-}
-
-@media (min-width: $tablet-width) {
-  .principles-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 20px;
+  outline: 5px solid rgba(0, 60, 255, 0.507);
+  outline-offset: -5px;
 }
 
 @media (min-width: $desktop-width) {
-  .principles-list {
-    display: flex;
+  .programs-list {
+    margin: 0 110px;
   }
 }
 
-.principles-list__health::before {
+.programs-list__slim::before {
   content: "";
-  background: url("../img/tree.svg") no-repeat;
-  width: 60px;
-  height: 60px;
+  background: url("../img/cat-slim.svg") no-repeat;
+  width: 50px;
+  height: 53px;
   display: block;
+  padding-right: 19px;
 }
 
-.principles-list__water::before {
+.programs-list__pro::before {
   content: "";
-  background: url("../img/water.svg") no-repeat;
-  width: 60px;
-  height: 60px;
+  background: url("../img/cat-pro.svg") no-repeat;
+  width: 67px;
+  height: 50px;
   display: block;
+  padding-right: 11px;
 }
 
-.principles-list__dish::before {
-  content: "";
-  background: url("../img/dish.svg") no-repeat;
-  width: 60px;
-  height: 60px;
-  display: block;
-}
-
-.principles-list__time::before {
-  content: "";
-  background: url("../img/time.svg") no-repeat;
-  width: 60px;
-  height: 60px;
-  display: block;
+.programs-list__details {
+  color: $black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
 }

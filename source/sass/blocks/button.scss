@@ -1,10 +1,13 @@
 .order__button {
-  color: $white;
+  padding: 10px 109px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.general-button {
+  color: $white;
   text-transform: uppercase;
   background-color: $green;
-  padding: 10px 109px;
   border: none;
   text-decoration: none;
 }
