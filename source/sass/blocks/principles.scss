@@ -1,10 +1,94 @@
+.principles {
+  margin: 0 20px;
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+@media (min-width: $desktop-width) {
+  .principles {
+    margin: 0 110px;
+  }
+}
+
 .principles__title {
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $black;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .principles__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .principles-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .programs-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .principles__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .principles-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .principles-list {
+    display: flex;
+  }
+}
+
+.principles-list__item {
+  width: 250px;
+}
+
+.principles-list__health::before {
+  content: "";
+  background: url("../img/tree.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.principles-list__water::before {
+  content: "";
+  background: url("../img/water.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.principles-list__dish::before {
+  content: "";
+  background: url("../img/dish.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.principles-list__time::before {
+  content: "";
+  background: url("../img/time.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
 }

@@ -1,0 +1,50 @@
+//Footer
+.page-footer {
+  background-color: $grey;
+  outline: 5px solid rgba(0, 60, 255, 0.8);
+  outline-offset: -5px;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 124px;
+}
+
+//contacts
+.page-footer__wrapper {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: 0;
+  margin: 39px 20px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__logo {
+  outline: 5px solid rgba(0, 60, 255, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.page-footer__copyright {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.copyright__name {
+  color: $darkgrey;
+  text-decoration: none;
+}
