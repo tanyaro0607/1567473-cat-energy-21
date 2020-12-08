@@ -1,9 +1,21 @@
-.comments__slogan {
-  text-transform: uppercase;
+.comments {
+  font-family: "Oswald", sans-serif;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-.registration__block-title {
-  font-size: 24px;
-  line-height: 26px;
-  color: $black;
+.comments__slogan {
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.comments__title {
+  padding: 23px 0 37px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .comments__title {
+    padding: 65px 0 76px 0;
+  }
 }

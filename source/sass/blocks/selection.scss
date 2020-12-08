@@ -1,0 +1,42 @@
+.selection__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $black;
+  margin: 0;
+  padding: 27px 0 37px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .selection__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 65px 0 54px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .selection__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 77px 0 56px 0;
+  }
+}
+
+.selection__slogan {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+  padding: 0 0 39px 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .registration__wrapper {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

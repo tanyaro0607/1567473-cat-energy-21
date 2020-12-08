@@ -6,37 +6,51 @@
   font-weight: 400;
   color: $black;
   text-transform: uppercase;
+  width: 140px;
+}
+
+.location__address {
+  width: 140px;
 }
 
 @media (min-width: $tablet-width) {
   .location__invitation {
     font-size: 20px;
     line-height: 21px;
+    width: 170px;
   }
 
   .location__address {
     font-size: 16px;
     line-height: 20px;
+    width: 170px;
+  }
+}
+
+.location__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 5px solid rgba(255, 0, 157, 0.8);
+  outline-offset: -5px;
+  background-color: $grey;
+}
+
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    background-color: $white;
   }
 }
 
 .location {
-  display: flex;
-  justify-content: space-between;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
   padding: 0 20px;
-  background-color: $grey;
-}
-
-.contacts {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
   .location {
-    background-color: $white;
+    padding: 0 30px 0 70px;
   }
 }
 
@@ -45,9 +59,10 @@
     position: relative;
   }
 
-  .location {
+  .location__wrapper {
     position: absolute;
     width: 25%;
+    height: 50%;
     bottom: 104px;
     left: 110px;
   }
