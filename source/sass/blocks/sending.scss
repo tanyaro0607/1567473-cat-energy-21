@@ -1,0 +1,26 @@
+.sending__button {
+  font-family: "Oswald", sans-serif;
+  padding: 14px 79px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .sending__button {
+    padding: 14px 64px;
+    font-size: 20px;
+  }
+}
+
+.sending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .sending {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

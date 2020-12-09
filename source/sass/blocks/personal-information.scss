@@ -1,9 +1,54 @@
+.personal-information__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $desktop-width) {
+  .personal-information__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .personal-information__item {
   text-transform: uppercase;
 }
 
-.registration__block-title {
-  font-size: 24px;
-  line-height: 26px;
-  color: $black;
+.personal-information {
+  font-family: "Oswald", sans-serif;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.personal-information ::placeholder {
+  text-transform: uppercase;
+  color: $darkgrey;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .personal-information ::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .personal-information__title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.personal-information__title {
+  padding: 26px 0 35px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .personal-information__title {
+    padding: 71px 0 76px 0;
+  }
 }

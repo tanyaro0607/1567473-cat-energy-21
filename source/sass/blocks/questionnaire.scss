@@ -1,0 +1,31 @@
+.questionnaire ::placeholder {
+  text-transform: uppercase;
+  color: $darkgrey;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: $desktop-width) {
+  .questionnaire ::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.questionnaire {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .questionnaire {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
