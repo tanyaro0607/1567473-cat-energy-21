@@ -1,0 +1,35 @@
+.description-product__product-name {
+  color: $darkgrey-special;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  width: 76px;
+}
+
+@media (min-width: $tablet-width) {
+  .description-product__product-name {
+    width: 150px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 161px;
+  }
+}
+
+.quality {
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 16px;
+  color: $darkgrey-special;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media (min-width: $tablet-width) {
+  .quality {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

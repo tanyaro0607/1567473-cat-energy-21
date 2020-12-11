@@ -1,5 +1,7 @@
 //contacts
 .location__invitation {
+  padding: 0;
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -11,6 +13,8 @@
 
 .location__address {
   width: 140px;
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,14 +47,15 @@
 }
 
 .location {
+  background-color: $grey;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
-  padding: 0 20px;
+  padding: 28px 20px 22px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .location {
-    padding: 0 30px 0 70px;
+    padding: 65px 30px 61px 70px;
   }
 }
 
@@ -59,10 +64,8 @@
     position: relative;
   }
 
-  .location__wrapper {
+  .location {
     position: absolute;
-    width: 25%;
-    height: 50%;
     bottom: 104px;
     left: 110px;
   }
