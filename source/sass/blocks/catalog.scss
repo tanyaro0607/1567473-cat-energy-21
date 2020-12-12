@@ -1,23 +1,117 @@
+.catalog {
+  outline: 5px solid rgba(0, 60, 255, 0.8);
+  outline-offset: -5px;
+}
+
+.catalog__wrapper {
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -5px;
+  margin: 0 20px;
+}
+
+.section-title {
+  color: $black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
 .catalog__titte {
+  padding: 27px 0 0 0;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+}
+
+.catalog__catalog-item-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .catalog-item__order {
-  margin: 13px 0 25px 0;
+  margin: 13px 0 14px 0;
 }
 
-.quality {
-  color: $darkgrey-special;
+@media (min-width: $tablet-width) {
+  .catalog-item__order {
+    margin: 33px 0 40px 0;
+  }
 }
 
-.catalog__list {
+.catalog-item__description {
+  display: flex;
+}
+
+.catalog-item__product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item__product {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.product__image {
+  align-self: end;
+  padding-left: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .product__image {
+    position: absolute;
+    bottom: 303px;
+  }
+}
+
+.catalog__catalog-list {
   list-style: none;
+  padding: 0;
 }
 
-.catalog-item__product-name {
-  color: $darkgrey-special;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
+@media (min-width: $tablet-width) {
+  .catalog__catalog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__catalog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.catalog-item {
+  position: relative;
+  outline: 5px solid rgba(255, 0, 255, 0.8);
+  outline-offset: -5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 59px 0 0 0;
+  }
+
+  .catalog-item:not(:last-child) {
+    background-color: $grey;
+  }
 }

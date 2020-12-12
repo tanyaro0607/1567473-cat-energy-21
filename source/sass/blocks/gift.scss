@@ -1,5 +1,39 @@
 .gift {
   margin: 39px 20px 35px 20px;
-  background-color: $green;
+  background: url("../img/gift-photo-mobile.jpg") no-repeat;
+  background-size: cover;
+  height: 289px;
   color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    height: 289px;
+    outline: 5px solid rgba(0, 0, 255, 0.8);
+    outline-offset: -5px;
+    align-self: end;
+  }
+}
+
+.gift__slogan {
+  width: 161px;
+  text-align: center;
+}
+
+.gift__slogan::before {
+  content: "";
+  background: url("../img/gift.svg") no-repeat;
+  width: 78px;
+  height: 80px;
+  display: block;
 }
