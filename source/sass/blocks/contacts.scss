@@ -37,17 +37,25 @@
   align-items: center;
   outline: 5px solid rgba(255, 0, 157, 0.8);
   outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .location__address {
+    text-align: end;
+  }
+}
+
+.location-special {
   background-color: $grey;
 }
 
 @media (min-width: $tablet-width) {
-  .location__wrapper {
+  .location-special__wrapper {
     background-color: $white;
   }
 }
 
 .location {
-  background-color: $grey;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
   padding: 28px 20px 22px 20px;
@@ -68,5 +76,12 @@
     position: absolute;
     bottom: 104px;
     left: 110px;
+    background-color: $white;
   }
+}
+
+.map__photo {
+  width: 100%;
+  display: block;
+  height: 400px;
 }
