@@ -169,6 +169,11 @@
     width: 100%;
     text-align: center;
   }
+
+  .site-list__item a {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
