@@ -1,5 +1,5 @@
 .page-header {
-  padding: 0 20px;
+  padding: 0;
   color: $black;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
@@ -193,6 +193,7 @@
 
 @media (max-width: $mobile-width-only) {
   .page-header__logo {
+    padding: 11px 20px 24px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
