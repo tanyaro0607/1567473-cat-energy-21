@@ -1,4 +1,5 @@
 .optional__list {
+  color: $black;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   list-style: none;
@@ -6,7 +7,27 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.optional__item input {
   margin: 0;
+}
+
+.optional__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.optional__item:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .optional__item {
+    margin: 0 0 32px 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,24 +42,16 @@
   .optional__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
   }
-}
-
-
-.registration__sending__button {
-  color: $white;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: $green;
-  padding: 7px 44px;
-  border: none;
 }
 
 .optional {
   color: $black;
   border: none;
   padding: 0;
+  outline: 5px solid rgba(21, 255, 0, 0.8);
+  outline-offset: -5px;
 }
 
 .optional__title {
@@ -56,10 +69,12 @@
   height: 30px;
   width: 30px;
   outline: none;
+  margin-right: 16px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    margin-right: 19px;
   }
 }
 
@@ -72,6 +87,7 @@
   height: 30px;
   transform: translate(-50%, -50%);
   border: 1px solid $lightgrey;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     width: 40px;

@@ -3,11 +3,41 @@
   border: none;
   padding: 0;
   margin: 0;
+  outline: 5px solid rgba(255, 196, 0, 0.8);
+  outline-offset: -5px;
+  width: 100%;
+}
+
+.comments ::placeholder {
+  text-transform: uppercase;
+  color: $darkgrey;
+  font-family: "Oswald", sans-serif;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments ::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+  }
 }
 
 .comments__slogan {
   text-transform: uppercase;
   padding: 0;
+  border: 1px solid $neutral-grey;
+  width: 100%;
+  display: block;
+  height: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments__slogan {
+    height: 174px;
+  }
 }
 
 .comments__title {

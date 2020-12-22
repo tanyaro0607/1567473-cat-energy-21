@@ -8,11 +8,44 @@
   .personal-information__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
 .personal-information__item {
   text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+}
+
+
+.personal-information__item label {
+  margin-right: 10px;
+}
+
+
+.personal-information__item input {
+  border: 1px solid $neutral-grey;
+  width: 100%;
+  display: block;
+  height: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .personal-information__item input {
+    height: 52px;
+    margin-right: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-information__item input {
+    margin-right: 0;
+  }
 }
 
 .personal-information {
@@ -20,18 +53,22 @@
   border: none;
   padding: 0;
   margin: 0;
+  outline: 5px solid rgba(0, 183, 255, 0.8);
+  outline-offset: -5px;
 }
 
 .personal-information ::placeholder {
   text-transform: uppercase;
   color: $darkgrey;
   font-family: "Oswald", sans-serif;
+  padding-left: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .personal-information ::placeholder {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 20px;
   }
 }
 
