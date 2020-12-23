@@ -5,28 +5,57 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  margin: 0;
+  margin: 20px 0 20px 0;
 
   @media (min-width: $tablet-width) {
     padding-left: 27px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 .goals {
   font-family: "Oswald", sans-serif;
   padding: 0;
-  margin: 0%;
+  margin: 24px 0 0 0;
+  border: none;
+  outline: 5px solid rgba(195, 0, 255, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .goals {
+    margin: 72px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goals {
+    margin: 0;
+  }
+}
+
+.goals__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.goals__item:not(:last-child) {
+  padding-bottom: 13px;
 }
 
 .goals__item input[type="radio"] {
   position: relative;
-  height: 22px;
-  width: 22px;
+  height: 30px;
+  width: 30px;
   outline: none;
+  margin-right: 15px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    margin-right: 20px;
   }
 }
 
@@ -35,11 +64,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid $lightgrey;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -52,8 +82,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 14px;
-  height: 14px;
+  width: 13.5px;
+  height: 13.5px;
   border-radius: 50%;
   background-color: $green;
   transform: translate(-50%, -50%);

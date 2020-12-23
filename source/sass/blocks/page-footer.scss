@@ -25,18 +25,18 @@
   align-items: center;
 }
 
-@media (min-width: $desktop-width) {
-  .page-footer__wrapper {
-    margin: 57px 110px;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 55px 30px 61px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    margin: 57px 110px;
   }
 }
 

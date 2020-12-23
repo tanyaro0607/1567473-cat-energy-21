@@ -1,14 +1,23 @@
 .sending__button {
   font-family: "Oswald", sans-serif;
-  padding: 14px 79px;
+  padding: 14px 76px;
   font-size: 16px;
   line-height: 20px;
+  margin: 0 0 21px 0;
 }
 
 @media (min-width: $tablet-width) {
   .sending__button {
-    padding: 14px 64px;
+    padding: 14px 62px;
     font-size: 20px;
+    margin: 0 61px 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sending__button {
+    padding: 13px 193px;
+    margin: 0 81px 0 0;
   }
 }
 
@@ -20,7 +29,30 @@
 
 @media (min-width: $tablet-width) {
   .sending {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0 0 72px 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sending {
+    margin: 0 0 82px 0;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sending__comment {
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .sending__comment {
+    margin: 0;
   }
 }

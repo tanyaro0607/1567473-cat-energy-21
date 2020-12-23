@@ -1,17 +1,7 @@
-.questionnaire ::placeholder {
-  text-transform: uppercase;
-  color: $darkgrey;
-  font-family: "Oswald", sans-serif;
-}
-
-@media (min-width: $desktop-width) {
-  .questionnaire ::placeholder {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
 .questionnaire {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+  border: none;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -21,6 +11,67 @@
   font-family: "Oswald", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .questionnaire label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.questionnaire ::placeholder {
+  text-transform: uppercase;
+  color: $darkgrey;
+  font-family: "Oswald", sans-serif;
+  padding-left: 14px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .questionnaire ::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+  }
+}
+
+.questionnaire__item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+}
+
+.questionnaire__item:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+.questionnaire input {
+  border: 1px solid $neutral-grey;
+  width: 100%;
+  display: block;
+  height: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .questionnaire input {
+    height: 52px;
+  }
+}
+
+.questionnaire label {
+  margin-right: 16px;
+}
+
+@media (min-width: $desktop-width) {
+  .questionnaire ::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
