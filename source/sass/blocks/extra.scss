@@ -4,3 +4,9 @@
     grid-template-columns: 3fr 1fr;
   }
 }
+
+.extra {
+  outline: 5px solid rgba(255, 0, 55, 0.8);
+  outline-offset: -5px;
+  margin: 0;
+}
