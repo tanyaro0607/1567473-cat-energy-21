@@ -10,8 +10,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 0 110px;
+    padding: 53px 110px 0 110px;
     position: relative;
     z-index: 1;
   }
@@ -145,8 +143,6 @@
 }
 
 .page-header__wrapper {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   width: 100%;
 }
 
@@ -185,10 +181,6 @@
 .page-header__logo {
   display: block;
   padding: 11px 0 24px 0;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  position: relative;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -198,6 +190,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+  }
+}
+
+.logo__title {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

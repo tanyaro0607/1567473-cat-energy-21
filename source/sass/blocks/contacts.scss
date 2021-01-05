@@ -17,6 +17,16 @@
   margin: 0;
 }
 
+@media (max-width: $mobile-width-only) {
+  .location__street {
+    margin: 0;
+  }
+
+  .location__city {
+    margin: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .location__invitation {
     font-size: 20px;
@@ -35,8 +45,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: 5px solid rgba(255, 0, 157, 0.8);
-  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,8 +64,6 @@
 }
 
 .location {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
   padding: 28px 20px 22px 20px;
 }
 
