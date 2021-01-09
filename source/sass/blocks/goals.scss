@@ -4,13 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
-  margin: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 27px;
     font-size: 20px;
     line-height: 30px;
+    border: 1px solid $neutral-grey;
+    padding: 25px 0 25px 28px;
   }
 }
 
@@ -19,8 +20,28 @@
   padding: 0;
   margin: 24px 0 0 0;
   border: none;
-  outline: 5px solid rgba(195, 0, 255, 0.8);
-  outline-offset: -5px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .goals::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $neutral-grey;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .goals::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid $neutral-grey;
+    top: 0;
+    width: 100%;
+  }
+
+  .goals {
+    position: relative;
+  }
 }
 
 @media (min-width: $tablet-width) {

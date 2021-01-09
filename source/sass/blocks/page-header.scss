@@ -22,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 53px 110px 0 110px;
+    padding: 0 110px;
     position: relative;
     z-index: 1;
   }
@@ -144,12 +144,15 @@
 
 .page-header__wrapper {
   width: 100%;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
   }
 }
 
@@ -209,14 +212,28 @@
   }
 }
 
+.site-list__item--active {
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
-  .site-list__item--active {
-    border-bottom: 2px solid $green;
+  .site-list__item--active::after {
+    content: "";
+    bottom: 9px;
+    left: 0;
+    position: absolute;
+    border: 1px solid $green;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__item--active {
-    border-bottom: 2px solid $white;
+  .site-list__item-index--active::after {
+    content: "";
+    bottom: 9px;
+    left: 0;
+    position: absolute;
+    border: 1px solid $white;
+    width: 100%;
   }
 }
