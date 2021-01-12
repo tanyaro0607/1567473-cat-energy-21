@@ -1,6 +1,4 @@
 .questionnaire {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
   border: none;
   text-transform: uppercase;
   display: flex;
@@ -24,7 +22,6 @@
   text-transform: uppercase;
   color: $darkgrey;
   font-family: "Oswald", sans-serif;
-  padding-left: 14px;
   font-size: 16px;
   line-height: 18px;
 }
@@ -33,7 +30,6 @@
   .questionnaire ::placeholder {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 19px;
   }
 }
 
@@ -54,12 +50,17 @@
   border: 1px solid $neutral-grey;
   width: 100%;
   display: block;
-  height: 45px;
-}
+  font-family: "Oswald", sans-serif;
+  padding-left: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $darkgrey;
 
-@media (min-width: $tablet-width) {
-  .questionnaire input {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     height: 52px;
+    padding-left: 19px;
   }
 }
 
@@ -80,3 +81,20 @@
     line-height: 30px;
   }
 }
+
+/*Убрать стрелки для браузера Google Chrome:
+.questionnaire__item input[type="number"]::-webkit-outer-spin-button,
+.questionnaire__item input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*Убрать стрелки для браузера Firefox:
+.questionnaire__iteminput[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.questionnaire__item input[type="number"]:hover,
+.questionnaire__item input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+*/

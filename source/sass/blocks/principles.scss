@@ -1,12 +1,5 @@
 .principles {
   margin: 0 20px;
-  outline: 5px solid red;
-  outline-offset: -5px;
-}
-
-.principles-list__item {
-  outline: 5px solid rgb(255, 0, 212);
-  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {

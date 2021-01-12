@@ -10,8 +10,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,10 +55,8 @@
   align-items: center;
   padding: 0;
   margin: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .site-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -68,6 +64,11 @@
     margin: 0 auto;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -145,15 +146,16 @@
 }
 
 .page-header__wrapper {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   width: 100%;
-}
 
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
   }
 }
 
@@ -185,10 +187,6 @@
 .page-header__logo {
   display: block;
   padding: 11px 0 24px 0;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  position: relative;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -198,6 +196,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+  }
+}
+
+.logo__title {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -211,14 +215,28 @@
   }
 }
 
+.site-list__item--active {
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
-  .site-list__item--active {
-    border-bottom: 2px solid $green;
+  .site-list__item--active::after {
+    content: "";
+    bottom: 9px;
+    left: 0;
+    position: absolute;
+    border: 1px solid $green;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__item--active {
-    border-bottom: 2px solid $white;
+  .site-list__item-index--active::after {
+    content: "";
+    bottom: 9px;
+    left: 0;
+    position: absolute;
+    border: 1px solid $white;
+    width: 100%;
   }
 }

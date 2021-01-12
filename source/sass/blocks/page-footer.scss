@@ -1,8 +1,6 @@
 //Footer
 .page-footer {
   background-color: $grey;
-  outline: 5px solid rgba(0, 60, 255, 0.8);
-  outline-offset: -5px;
 }
 
 .social__list {
@@ -17,8 +15,6 @@
 
 //contacts
 .page-footer__wrapper {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   margin: 39px 20px 22px 20px;
   display: flex;
   flex-direction: column;
@@ -58,4 +54,8 @@
 .copyright__name {
   color: $darkgrey;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }

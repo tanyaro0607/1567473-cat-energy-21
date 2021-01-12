@@ -1,4 +1,13 @@
 //contacts
+
+.contacts__form {
+  background-color: $grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
 .location__invitation {
   padding: 0;
   margin: 0;
@@ -15,6 +24,16 @@
   width: 140px;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .location__street {
+    margin: 0;
+  }
+
+  .location__city {
+    margin: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -35,8 +54,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: 5px solid rgba(255, 0, 157, 0.8);
-  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,14 +73,12 @@
 }
 
 .location {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
   padding: 28px 20px 22px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .location {
-    padding: 65px 30px 61px 70px;
+    padding: 65px 89px 65px 76px;
   }
 }
 

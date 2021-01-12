@@ -1,7 +1,5 @@
 .catalog-item__more-products {
   padding: 23px 0 21px 0;
-  outline: 5px solid rgba(0, 60, 255, 0.8);
-  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,7 +34,7 @@
 .more-products__informatiom {
   font-size: 12px;
   line-height: 14px;
-  color: $darkgrey-special;
+  color: $darkgrey;
 }
 
 @media (min-width: $tablet-width) {

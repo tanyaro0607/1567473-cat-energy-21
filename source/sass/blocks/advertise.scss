@@ -3,31 +3,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 5px solid rgba(204, 0, 255, 0.8);
-  outline-offset: -5px;
 }
 
 .advertise__offer {
-  background-color: $green;
+  background-color: rgba(104, 183, 56, 0.85);
   color: $white;
-  margin: 0 20px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (max-width: $mobile-width-only) {
     padding-bottom: 135px;
+    margin: 0;
   }
 }
 
 .advertise__wrapper {
-  background-color: $green;
+  background-color: rgba(104, 183, 56, 0.85);
   width: 100%;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 138px;
+    background: url("../img/background-cat.jpg") no-repeat;
+    background-size: 100% auto;
   }
 }
 
@@ -110,15 +108,55 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
+@media (min-width: $desktop-width) {
+  .advertise::before {
+    content: "";
+    background: url("../img/background-cat-desktop.jpg") no-repeat;
+    width: 50%;
+    background-size: 100% 694px;
+    position: absolute;
+    height: 694px;
+    top: -150px;
+    right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/background-cat-desktop@2x.jpg") no-repeat;
+      background-size: 100% 694px;
+    }
+  }
+
   .advertise::after {
+    content: "";
+    background-color: rgba(104, 183, 56, 0.85);
+    width: 50%;
+    background-size: 100% 694px;
+    position: absolute;
+    height: 694px;
+    top: -150px;
+    right: 0;
+  }
+
+  .advertise {
+    min-height: 696px;
+    position: relative;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .advertise__wrapper::after {
     content: "";
     background: url("../img/index-can-mobile.png") no-repeat;
     width: 280px;
     height: 270px;
     display: block;
     position: absolute;
-    bottom: 43px;
+    bottom: 65px;
+    left: calc(50% - 140px);
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index-can-mobile@2x.png") no-repeat;
+      background-size: 280px 270px;
+    }
   }
 
   .advertise {
@@ -127,11 +165,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advertise::after {
+  .advertise__wrapper::after {
     content: "";
     width: 709px;
     height: 609px;
     background: url("../img/index-can-tablet.png") no-repeat;
+    display: block;
+    position: relative;
+    bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index-can-tablet@2x.png") no-repeat;
+      background-size: 709px 609px;
+    }
   }
 
   .advertise {
@@ -140,7 +186,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advertise::after {
+  .advertise__wrapper::after {
     width: 552px;
     height: 499px;
     content: "";
@@ -148,8 +194,14 @@
     position: absolute;
     display: block;
     padding: 0;
-    left: 448px;
-    top: 29px;
+    left: 558px;
+    top: 0;
+    z-index: 2;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index-can-desktop@2x.png") no-repeat;
+      background-size: 552px 499px;
+    }
   }
 
   .advertise {
@@ -157,22 +209,5 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 110px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advertise::before {
-    content: "";
-    background-color: rgba(104, 183, 56, 0.85);
-    width: 50%;
-    position: absolute;
-    height: 720px;
-    top: -100px;
-    right: 0;
-  }
-
-  .advertise {
-    min-height: 696px;
-    position: relative;
   }
 }
