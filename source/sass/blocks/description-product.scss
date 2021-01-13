@@ -25,7 +25,6 @@
   color: $darkgrey;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,6 +32,10 @@
     font-size: 16px;
     line-height: 16px;
   }
+}
+
+.quality__description {
+  margin: 0 0 0 auto;
 }
 
 .quality__option {

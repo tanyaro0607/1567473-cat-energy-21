@@ -18,12 +18,25 @@
   color: $black;
   text-transform: uppercase;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 170px;
+  }
 }
 
 .location__address {
   width: 140px;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 170px;
+    text-align: end;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -36,30 +49,10 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .location__invitation {
-    font-size: 20px;
-    line-height: 21px;
-    width: 170px;
-  }
-
-  .location__address {
-    font-size: 16px;
-    line-height: 20px;
-    width: 170px;
-  }
-}
-
 .location__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media (min-width: $tablet-width) {
-  .location__address {
-    text-align: end;
-  }
 }
 
 .location-special {
@@ -74,24 +67,22 @@
 
 .location {
   padding: 28px 20px 22px 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .location {
+  @media (min-width: $tablet-width) {
     padding: 65px 89px 65px 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 104px;
+    left: 110px;
+    background-color: $white;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
-  }
-
-  .location {
-    position: absolute;
-    bottom: 104px;
-    left: 110px;
-    background-color: $white;
   }
 }
 

@@ -1,9 +1,7 @@
 .catalog-item__more-products {
   padding: 23px 0 21px 0;
-}
 
-@media (min-width: $tablet-width) {
-  .catalog-item__more-products {
+  @media (min-width: $tablet-width) {
     padding: 52px 0 87px 0;
   }
 }
@@ -23,11 +21,13 @@
   border: none;
   text-decoration: none;
   color: $darkgrey;
-}
 
-@media (min-width: $tablet-width) {
-  .show-all__button {
+  @media (min-width: $tablet-width) {
     padding: 9px 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 39px;
   }
 }
 
@@ -35,12 +35,15 @@
   font-size: 12px;
   line-height: 14px;
   color: $darkgrey;
-}
 
-@media (min-width: $tablet-width) {
-  .more-products__informatiom {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+    text-align: center;
   }
 }
 
@@ -51,12 +54,16 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $black;
-}
 
-@media (min-width: $tablet-width) {
-  .more-products__slogan {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    margin: 0 auto 0 auto;
+    text-align: center;
   }
 }
 
@@ -67,10 +74,8 @@
   height: 30px;
   display: block;
   margin: 0 auto 23px auto;
-}
 
-@media (min-width: $tablet-width) {
-  .more-products__slogan::before {
+  @media (min-width: $tablet-width) {
     content: "";
     background: url("../img/plus-tablet.svg") no-repeat;
     width: 60px;
