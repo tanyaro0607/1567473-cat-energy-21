@@ -36,6 +36,23 @@
 .personal-information__item input {
   outline: none;
   border: none;
+  height: 43px;
+  width: 100%;
+
+  &:hover {
+    border: 1px solid $lightgrey;
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid $darkgrey;
+    outline: none;
+  }
+
+  &--error {
+    border: 2px solid $light-red;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     height: 52px;

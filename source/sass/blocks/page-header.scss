@@ -157,7 +157,6 @@
 
 .site-list__item {
   display: block;
-  padding: 22px 0 24px 0;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -167,6 +166,10 @@
 
   &:focus {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 0 24px 0;
   }
 }
 
@@ -206,6 +209,7 @@
   .site-list__item a {
     width: 100%;
     display: block;
+    padding: 22px 0 24px 0;
   }
 }
 

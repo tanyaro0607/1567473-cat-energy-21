@@ -49,10 +49,9 @@
 .sending__comment {
   padding: 0;
   margin: 0 0 32px 0;
-}
+  font-family: "Arial", sans-serif;
 
-@media (min-width: $tablet-width) {
-  .sending__comment {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
