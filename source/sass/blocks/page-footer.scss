@@ -11,6 +11,10 @@
   justify-content: space-between;
   align-items: center;
   width: 124px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 20px auto 20px auto;
+  }
 }
 
 //contacts
@@ -57,5 +61,25 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 22px;
+  }
+}
+
+/*Разделитеди*/
+
+@media (max-width: $mobile-width-only) {
+  .page-footer__logo {
+    border-bottom: 1px solid $grey-light-neutral;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+
+  .page-footer__social {
+    border-bottom: 1px solid $grey-light-neutral;
+    width: 100%;
+  }
+
+  .page-footer__copyright {
+    margin-top: 22px;
   }
 }

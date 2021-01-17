@@ -44,15 +44,21 @@
 
 .programs__description {
   padding-bottom: 19px;
-}
 
-@media (min-width: $tablet-width) {
-  .programs__description {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $grey-light-neutral;
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
     padding-bottom: 48px;
     color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 72px;
   }
 }
 
@@ -62,6 +68,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 266px;
+
+  @media (min-width: $tablet-width) {
+    height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 374px;
+  }
 }
 
 .programs-list__item:not(:last-child) {
@@ -145,6 +160,12 @@
   margin-right: 15px;
 }
 
+.programs-list__link {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .programs-list__details {
     font-size: 20px;
@@ -193,7 +214,7 @@
     content: "";
     background: url("../img/cat-pro-desktop.svg") no-repeat;
     width: 134px;
-    height: 100px;
+    height: 106px;
     display: block;
     padding-right: 11px;
   }

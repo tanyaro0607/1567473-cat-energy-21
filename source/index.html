@@ -53,19 +53,22 @@
           <div class="programs__wrapper">
           <h3 class="programs-title programs-list__title-slim">Похудение</h3>
           <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес. </p>
+          <div class="programs-list__link">
           <a class="programs-list__details" href="">Каталог slim</a>
-          <a class="" href="programs-list__further" href="">
+          <a class="programs-list__further" href="">
             <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
               <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
               </svg>
-          </a>
+        </a>
+      </div>
           </div>
         </li>
         <li class="programs-list__item programs-list__pro">
           <div class="programs__wrapper">
           <h3 class="programs-title programs-list__title-pro">Набор массы</h3>
           <p class="programs__description"> Зарабатывать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы! </p>
+          <div class="programs-list__link">
           <a class="programs-list__details" href="">Каталог pro</a>
           <a class="programs-list__further" href="">
             <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,12 +131,11 @@
     </dl>
   </div>
   <div class="stats__slider slider">
-        <label class="slider__toggles slider__toggles--before" for="story-input-before">Было</label>
-        <div class="slider__range">
-          <div class="slider__scale"></div>
-          <button class="slider__button" type="button">До/После</button>
-        </div>
-        <label class="slider__toggles slider__toggles--after" for="story-input-after">Стало</label>
+        <button class="slider__label" type="button">Было</button>
+        <span class="slider__progress-bar">
+          <span class="slider__progress-filler" tabindex="0"></span>
+        </span>
+        <button class="slider__label" type="button">Стало</button>
   </div>
   </section>
   <section class="contacts">
@@ -148,16 +150,16 @@
     </div>
       </div>
     </div>
-    <div class="map">
-      <img class="map__photo" src="img/map.png" width="320" height="362" alt="Местонахождение офиса">
-    </div>
+    </sectio class="map">
+      <iframe class="google-map" title="Наш адрес на карте" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.3937344997485!2d30.317443167316902!3d59.939406907689545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1562685480652!5m2!1sru!2sua" width="100%" height="362" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+    </section>
   </div>
   </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-      <a class="page-footer__logo-title">
+      <a href="#" class="page-footer__logo-title">
         <img src="img/logo-mobile-header.svg" width="128" height="24" alt="Cat Energy">
       </a>
     </div>

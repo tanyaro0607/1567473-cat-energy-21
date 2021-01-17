@@ -167,3 +167,47 @@
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .principles-list__health {
+    background: url("../img/1.svg") no-repeat;
+    background-position: 45% 75%;
+  }
+
+  .principles-list__water {
+    background: url("../img/2.svg") no-repeat;
+    background-position: 50% 75%;
+  }
+
+  .principles-list__dish {
+    background: url("../img/3.svg") no-repeat;
+    background-position: 50% 75%;
+  }
+
+  .principles-list__time {
+    background: url("../img/4.svg") no-repeat;
+    background-position: 50% 75%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .principles-list__health {
+    background: url("../img/1.svg") no-repeat;
+    background-position: 70% 75%;
+  }
+
+  .principles-list__water {
+    background: url("../img/2.svg") no-repeat;
+    background-position: 90% 75%;
+  }
+
+  .principles-list__dish {
+    background: url("../img/3.svg") no-repeat;
+    background-position: 90% 75%;
+  }
+
+  .principles-list__time {
+    background: url("../img/4.svg") no-repeat;
+    background-position: 100% 75%;
+  }
+}

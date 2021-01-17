@@ -79,7 +79,7 @@
     top: 0;
     right: 0;
     z-index: 2;
-    display: block;
+    display: none;
     width: 25px;
     height: 25px;
     background-color: $white;
@@ -160,54 +160,13 @@
   padding: 22px 0 24px 0;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (max-width: $mobile-width-only) {
-  .site-list__item {
-    width: 100%;
-    text-align: center;
+  &:hover {
+    opacity: 0.6;
   }
 
-  .site-list__item a {
-    width: 100%;
-    display: block;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-list__item:not(:last-child) {
-    margin-right: 35px;
-  }
-}
-
-.page-header__logo {
-  display: block;
-  padding: 11px 0 24px 0;
-}
-
-@media (max-width: $mobile-width-only) {
-  .page-header__logo {
-    padding: 11px 20px 24px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-}
-
-.logo__title {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .site-list__item {
-    border-bottom: 1px solid $lightgrey-special;
-  }
-
-  .page-header__logo {
-    border-bottom: 1px solid $lightgrey-special;
+  &:focus {
+    opacity: 0.3;
   }
 }
 
@@ -234,5 +193,65 @@
     position: absolute;
     border: 1px solid $white;
     width: 100%;
+  }
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .site-list__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-list__item a {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  padding: 11px 0 24px 0;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 11px 20px 24px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+
+.logo__image {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+  }
+}
+
+.logo__title {
+  @media (max-width: $mobile-width-only) {
+    margin: 12px auto 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list__item {
+    border-bottom: 1px solid $lightgrey-special;
+  }
+
+  .page-header__logo {
+    border-bottom: 1px solid $lightgrey-special;
   }
 }
