@@ -30,13 +30,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 55px 30px 61px 30px;
+    margin: 42px 30px 61px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    margin: 57px 110px;
+    margin: 47px 110px;
   }
 }
 
@@ -72,7 +72,7 @@
     border-bottom: 1px solid $grey-light-neutral;
     width: 100%;
     text-align: center;
-    padding-bottom: 32px;
+    padding-bottom: 29px;
   }
 
   .page-footer__social {

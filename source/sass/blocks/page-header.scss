@@ -147,11 +147,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 53px;
+    padding-top: 49px;
   }
 }
 
@@ -180,7 +180,7 @@
 @media (min-width: $tablet-width) {
   .site-list__item--active::after {
     content: "";
-    bottom: 9px;
+    bottom: 15px;
     left: 0;
     position: absolute;
     border: 1px solid $green;
@@ -191,7 +191,7 @@
 @media (min-width: $desktop-width) {
   .site-list__item-index--active::after {
     content: "";
-    bottom: 9px;
+    bottom: 17px;
     left: 0;
     position: absolute;
     border: 1px solid $white;
@@ -209,7 +209,7 @@
   .site-list__item a {
     width: 100%;
     display: block;
-    padding: 22px 0 24px 0;
+    padding: 22px 0 22px 0;
   }
 }
 
@@ -221,7 +221,7 @@
 
 .page-header__logo {
   display: block;
-  padding: 11px 0 24px 0;
+  padding: 6px 0 26px 0;
 
   @media (max-width: $mobile-width-only) {
     padding: 11px 20px 24px 20px;

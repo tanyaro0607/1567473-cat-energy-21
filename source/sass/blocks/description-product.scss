@@ -25,6 +25,7 @@
   color: $darkgrey;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-family: "Arial", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,7 +40,7 @@
 }
 
 .quality__option {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 14px;

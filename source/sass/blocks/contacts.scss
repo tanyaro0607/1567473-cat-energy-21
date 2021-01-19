@@ -38,6 +38,11 @@
     width: 170px;
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-left: 87px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -67,10 +72,10 @@
 }
 
 .location {
-  padding: 28px 20px 22px 20px;
+  padding: 28px 20px 30px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 89px 58px 76px;
+    padding: 55px 89px 39px 72px;
   }
 
   @media (min-width: $desktop-width) {

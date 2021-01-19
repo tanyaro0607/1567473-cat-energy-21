@@ -11,6 +11,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-top: none;
   }
 }
 
@@ -21,7 +22,7 @@
     bottom: 0;
     background-color: $lightgrey-ultra;
     width: 100%;
-    height: 462px;
+    min-height: 462px;
     z-index: -1;
   }
 
@@ -31,7 +32,7 @@
 }
 
 .stats__example {
-  margin: 27px 21px 25px 20px;
+  margin: 27px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
@@ -79,10 +80,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px 0 0 0;
+    margin: 67px 0 0 0;
     display: flex;
     flex-direction: row;
   }
+}
+
+.stats__value {
+  margin: 0 0 0 3px;
 }
 
 .stats__cost {
@@ -92,6 +97,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    margin-right: 63px;
   }
 }
 
@@ -103,15 +109,17 @@
   color: $black;
   font-family: "Oswald", sans-serif;
   margin: 0;
-  padding: 27px 0 33px 0;
+  padding: 27px 0 35px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 45px 0 65px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 75px;
+    padding: 29px 0 65px 0;
   }
 }
 
@@ -126,6 +134,8 @@
 }
 
 .stats__list {
+  margin: 25px 0 0 0;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,119 +144,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-  }
-}
-
-.slider {
-  display: flex;
-  position: relative;
-  padding-top: 255px;
-  padding-bottom: 38px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: $black;
-  font-family: "Oswald", sans-serif;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 550px;
-    padding-bottom: 67px;
-  }
-}
-
-
-@media (max-width: $mobile-width-only) {
-  .slider::before {
-    width: 311px;
-    height: 232px;
-    content: "";
-    background: url("../img/cat-before.png") no-repeat;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: calc(50% - 155.5px);
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/cat-before@2x.png") no-repeat;
-      background-size: 311px 232px;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .slider::before {
-    width: 354px;
-    height: 620px;
-    content: "";
-    background: url("../img/cat-before-tablet.png") no-repeat;
-    position: absolute;
-    display: block;
-    padding: 0;
+    align-items: flex-start;
     margin: 0;
-    bottom: 30px;
-    right: 50%;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/cat-before-tablet@2x.png") no-repeat;
-      background-size: 354px 620px;
-    }
-  }
-
-  .slider::after {
-    width: 354px;
-    height: 607px;
-    content: "";
-    background: url("../img/cat-after-tablet.png") no-repeat;
-    position: absolute;
-    display: block;
-    padding: 0;
-    margin: 0;
-    left: 50%;
-    bottom: 30px;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/cat-after-tablet@2x.png") no-repeat;
-      background-size: 354px 607px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider::before {
-    width: 405px;
-    height: 536px;
-    content: "";
-    background: url("../img/cat-before-desktop.png") no-repeat;
-    position: absolute;
-    display: block;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    right: 44%;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/cat-before-desktop@2x.png") no-repeat;
-      background-size: 405px 536px;
-    }
-  }
-
-  .slider::after {
-    width: 325px;
-    height: 654px;
-    content: "";
-    background: url("../img/cat-after-desktop.png") no-repeat;
-    position: absolute;
-    display: block;
-    padding: 0;
-    margin: 0;
-    left: 50%;
-    top: 0;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/cat-after-desktop@2x.png") no-repeat;
-      background-size: 325px 654px;
-    }
   }
 }
 
@@ -337,5 +236,9 @@
     font-size: 14px;
     line-height: 14px;
     right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -7px;
   }
 }

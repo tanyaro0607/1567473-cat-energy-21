@@ -26,4 +26,15 @@
   background-color: $green;
   border: none;
   text-decoration: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background: $darkgreen;
+  }
+
+  &:active {
+    background: $darkgreen;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

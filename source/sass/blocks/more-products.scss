@@ -21,6 +21,16 @@
   border: none;
   text-decoration: none;
   color: $darkgrey;
+  font-family: "Oswald", sans-serif;
+
+  &:hover,
+  &:focus {
+    background: $lightgrey-special;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 9px 79px;
@@ -35,6 +45,7 @@
   font-size: 12px;
   line-height: 14px;
   color: $darkgrey;
+  font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
