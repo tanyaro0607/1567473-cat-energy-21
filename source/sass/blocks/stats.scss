@@ -49,11 +49,11 @@
 
 .example__rating {
   @media (min-width: $tablet-width) {
-    margin: 0 0 54px 0;
+    margin: 0 0 39px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 69px 0;
+    margin: 0 0 55px 0;
   }
 }
 
@@ -68,7 +68,7 @@
   justify-content: center;
 
   @media (max-width: $mobile-width-only) {
-    margin: 38px 0 0 0;
+    margin: 20px 0 0 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -80,7 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 67px 0 0 0;
+    margin: 50px 0 0 0;
     display: flex;
     flex-direction: row;
   }
@@ -134,9 +134,10 @@
 }
 
 .stats__list {
-  margin: 25px 0 0 0;
+  margin: 13px 0 0 0;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -151,6 +152,7 @@
 
 .example__description {
   margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

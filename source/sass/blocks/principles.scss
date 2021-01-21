@@ -60,6 +60,10 @@
   .principles__description {
     min-width: 200px;
   }
+
+  .principles__description br {
+    display: none;
+  }
 }
 
 

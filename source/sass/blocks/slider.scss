@@ -15,7 +15,7 @@
   font-family: "Oswald", sans-serif;
 
   @media (min-width: $tablet-width) {
-    padding-top: 613px;
+    padding-top: 600px;
     padding-bottom: 72px;
   }
 
@@ -203,7 +203,7 @@
     padding: 0;
     margin: 0;
     top: -30px;
-    right: 365px;
+    left: -40px;
     z-index: 3;
 
     @media (min-resolution: 2dppx) {
@@ -221,7 +221,7 @@
     display: block;
     padding: 0;
     margin: 0;
-    right: 80px;
+    left: 325px;
     top: -30px;
     z-index: 4;
 
@@ -230,4 +230,8 @@
       background-size: 325px 654px;
     }
   }
+}
+
+.slider__photo {
+  border: 1px solid red;
 }
