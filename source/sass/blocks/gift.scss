@@ -8,6 +8,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -17,14 +20,20 @@
 
 @media (min-width: $tablet-width) {
   .gift {
+    background-size: 100% auto;
     height: 200px;
+    background-position: 50% 67%;
     margin: 69px 30px 76px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gift {
+    background-size: cover;
     height: 289px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     align-self: end;
     margin: 80px 110px 86px 0;
   }
@@ -36,13 +45,7 @@
   width: 78px;
   height: 80px;
   display: block;
-  margin: 65px auto 48px auto;
-}
-
-@media (min-width: $tablet-width) {
-  .gift__slogan::before {
-    margin-right: 265px;
-  }
+  margin: 60px auto 48px auto;
 }
 
 @media (min-width: $desktop-width) {
@@ -63,6 +66,14 @@
 
 .gift__slogan span {
   width: 161px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 265px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -71,6 +82,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    text-align: start;
   }
 }
 
@@ -80,5 +92,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }

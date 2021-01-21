@@ -45,7 +45,7 @@
   }
 }
 
-.registration__block-title::after {
+/*.registration__block-title::after {
   content: "";
   position: absolute;
   display: block;
@@ -73,7 +73,7 @@
   @media (min-width: $desktop-width) {
     margin-right: 37px;
   }
-}
+} */
 
 /*.registration__block-title {
   font-family: "Oswald", sans-serif;
