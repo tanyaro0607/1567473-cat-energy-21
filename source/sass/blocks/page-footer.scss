@@ -11,6 +11,10 @@
   justify-content: space-between;
   align-items: center;
   width: 124px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 20px auto 20px auto;
+  }
 }
 
 //contacts
@@ -26,13 +30,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 55px 30px 61px 30px;
+    margin: 42px 30px 61px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    margin: 57px 110px;
+    margin: 47px 110px;
   }
 }
 
@@ -49,6 +53,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-family: "Arial", sans-serif;
 }
 
 .copyright__name {
@@ -57,5 +62,25 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 22px;
+  }
+}
+
+/*Разделитеди*/
+
+@media (max-width: $mobile-width-only) {
+  .page-footer__logo {
+    border-bottom: 1px solid $grey-light-neutral;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 29px;
+  }
+
+  .page-footer__social {
+    border-bottom: 1px solid $grey-light-neutral;
+    width: 100%;
+  }
+
+  .page-footer__copyright {
+    margin-top: 22px;
   }
 }

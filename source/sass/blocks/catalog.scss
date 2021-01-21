@@ -1,5 +1,5 @@
 .catalog__wrapper {
-  margin: 0 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
@@ -10,33 +10,47 @@
   }
 }
 
+.catalog-item__wrapper {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 20px;
+  }
+}
+
 .section-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 
 .catalog__titte {
-  padding: 27px 0 0 0;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
   color: $black;
 
+  @media (max-width: $mobile-width-only) {
+    padding: 29px 0 38px 20px;
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 36px 0 24px 0;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 0 25px 0;
   }
 }
 
 .catalog-item__order {
-  margin: 13px 0 14px 0;
+  margin: 0;
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
   }
 
   @media (min-width: $tablet-width) {
-    margin: 33px 0 40px 0;
+    margin: 43px 0 47px 0;
   }
 }
 
@@ -56,16 +70,18 @@
 
 .product__image {
   align-self: end;
-  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 303px;
-    left: 39px;
+    bottom: 283px;
+    left: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    left: 40px;
+    bottom: 293px;
   }
 }
 
@@ -93,12 +109,15 @@
   flex-direction: column;
   align-items: center;
 
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $lightgrey-special;
+    align-items: flex-start;
+  }
+
   @media (min-width: $tablet-width) {
     width: 324px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
     margin: 140px 0 0 0;
   }
 
@@ -107,8 +126,21 @@
   }
 }
 
+.catalog__catalog-item {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    display: block;
+  }
+}
+
+.catalog__catalog-item-more {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $lightgrey-special;
+  }
+}
+
 .catalog-item:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

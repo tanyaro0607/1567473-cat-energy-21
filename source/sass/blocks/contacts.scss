@@ -30,12 +30,18 @@
   width: 140px;
   padding: 0;
   margin: 0;
+  font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     width: 170px;
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-left: 87px;
   }
 }
 
@@ -66,10 +72,10 @@
 }
 
 .location {
-  padding: 28px 20px 22px 20px;
+  padding: 28px 20px 30px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 89px 65px 76px;
+    padding: 55px 89px 39px 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,8 +92,46 @@
   }
 }
 
-.map__photo {
+.google-map {
   width: 100%;
-  display: block;
-  height: 400px;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .google-map {
+    height: 400px;
+  }
+}
+
+.map {
+  background: url("../img/map-mobile.png") no-repeat;
+  background-size: 100% 362px;
+  height: 362px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.png");
+    background-size: 100% 362px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/map-tablet.png") no-repeat;
+    background-size: 100% 400px;
+    height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+      background-size: 100% 400px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/map-desktop.png") no-repeat;
+    background-size: 100% 400px;
+    height: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+      background-size: 100% 400px;
+    }
+  }
 }
