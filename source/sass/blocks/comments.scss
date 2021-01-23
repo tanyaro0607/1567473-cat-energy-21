@@ -21,7 +21,6 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 19px;
-    padding-top: 16px;
   }
 }
 
@@ -32,20 +31,15 @@
   width: 100%;
   display: block;
   height: 150px;
-}
+  margin: 37px 0 22px 0;
 
-@media (min-width: $tablet-width) {
-  .comments__slogan {
+  @media (min-width: $tablet-width) {
     height: 174px;
+    margin: 76px 0 63px 0;
   }
-}
 
-.comments__title {
-  padding: 23px 0 37px 0;
-}
-
-@media (min-width: $tablet-width) {
-  .comments__title {
-    padding: 65px 0 76px 0;
+  @media (min-width: $desktop-width) {
+    height: 174px;
+    margin: 76px 0 65px 0;
   }
 }

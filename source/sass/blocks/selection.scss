@@ -6,21 +6,15 @@
   color: $black;
   margin: 0;
   padding: 27px 0 37px 0;
-}
 
-@media (min-width: $tablet-width) {
-  .selection__title {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 65px 0 54px 0;
+    padding: 36px 0 54px 0;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .selection__title {
-    font-size: 60px;
-    line-height: 60px;
-    padding: 77px 0 56px 0;
+  @media (min-width: $desktop-width) {
+    padding: 45px 0 57px 0;
   }
 }
 
@@ -30,7 +24,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $black;
-  padding: 0 0 39px 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -38,5 +32,15 @@
   .selection__slogan {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.registration__selection {
+  margin: 0 0 39px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .registration__selection {
+    margin: 0 0 66px 0;
   }
 }

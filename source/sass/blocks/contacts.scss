@@ -28,6 +28,8 @@
 
 .location__address {
   width: 140px;
+  font-size: 14px;
+  line-height: 20px;
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -45,14 +47,17 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .location__street {
-    margin: 0;
-  }
 
-  .location__city {
-    margin: 0;
+.location__street {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
   }
+}
+
+.location__city {
+  margin: 0;
 }
 
 .location__wrapper {
@@ -75,7 +80,7 @@
   padding: 28px 20px 30px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 89px 39px 72px;
+    padding: 65px 70px 55px 72px;
   }
 
   @media (min-width: $desktop-width) {
