@@ -139,7 +139,7 @@
 
 .registration__line:first-child {
   left: -112px;
-  max-width: 40px;
+  min-width: 40px;
 }
 
 .registration__line:last-child {
@@ -154,11 +154,25 @@
   height: 2px;
   background-color: $green;
   z-index: -2;
-  right: -70px;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    right: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -110px;
+  }
 }
 
 .registration__title-name {
-  display: block;
-  max-width: 300px;
+  display: inline-block;
+  max-width: 200px;
   background-color: white;
+  padding-right: 22px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 550px;
+    padding-right: 37px;
+  }
 }
