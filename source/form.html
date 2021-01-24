@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page__body">
+<body class="page page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo logo">
@@ -21,11 +21,11 @@
       <a href="index.html" class="logo__title">
         <img src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
       </a>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
@@ -50,11 +50,11 @@
           <input id="questionnaire-name" type="text" name="name" placeholder="Барсик">
         </p>
         <p class="questionnaire__item">
-          <label for="questionnaire-weight">Вес(кг):*</label>
+          <label for="questionnaire-weight">Вес (кг):*</label>
           <input id="questionnaire-weight" type="number" name="weight" min="0" max="100" step="0.1" placeholder="7">
         </p>
         <p class="questionnaire__item">
-          <label for="questionnaire-age">Возраст(лет):</label>
+          <label for="questionnaire-age">Возраст (лет):</label>
           <input id="questionnaire-age" type="number" name="age" min="0" max="100" step="1" placeholder="7">
         </p>
         </fieldset>
@@ -77,10 +77,14 @@
         </fieldset>
       </div>
         <fieldset class="registration__personal-information personal-information">
-          <legend class="registration__block-title personal-information__title">Контактные данные (владельца кота)</legend>
+          <legend class="registration__block-title personal-information__title">
+            <div class="personal-information__line registration__line"></div>
+            <span>Контактные данные (владельца кота)</span>
+            <div class="personal-information__line registration__line"></div>
+          </legend>
           <ul class="personal-information__list">
           <li class="personal-information__item">
-            <label for="personal-information__email">E-mail:*</label>
+            <label class="personal-information__email" for="window__email">E-mail:*</label>
             <div class="personal-information__window window">
             <input id="window__email" type="email" name="email" placeholder="kuklachev@gmail.com">
             <a href="#" class="window__call">
@@ -89,9 +93,9 @@
           </div>
             </li>
           <li class="personal-information__item">
-            <label for="personal-information__phone">Телефон:*</label>
+            <label class="personal-information__phone" for="window__phone">Телефон:*</label>
             <div class="personal-information__window window">
-            <input id="window__phone" type="tel" name="phone" placeholder="8(960)900-60-90">
+            <input id="window__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
             <a href="#" class="window__call">
               <img src="img/phone.svg" alt="Иконка Телефон">
             </a>
@@ -100,11 +104,19 @@
         </ul>
         </fieldset>
         <fieldset class="registration__comments comments">
-          <legend class="registration__block-title comments__title"> Комментарии</legend>
+          <legend class="registration__block-title comments__title">
+            <div class="comments__line registration__line"></div>
+            <span>Комментарии</span>
+            <div class="comments__line registration__line"></div>
+          </legend>
           <textarea class="comments__slogan" name="comment" cols="40" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="registration__optional optional">
-          <legend class="registration__block-title optional__title">Дополнительно</legend>
+          <legend class="registration__block-title optional__title">
+            <div class="optional__line registration__line"></div>
+            <span>Дополнительно</span>
+            <div class="optional__line registration__line"></div>
+          </legend>
           <ul class="optional__list">
             <li class="optional__item">
               <input class="optional__input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -135,15 +147,15 @@
           <div class="location">
             <div class="location__wrapper">
           <h4 class="visually-hidden">Наше местоположение</h4>
-          <p class="location__invitation">Приглашаем к сотрудничеству диллеров!</p>
+          <p class="location__invitation"> Приглашаем<br> к сотрудничеству дилеров!</p>
           <div class="location__address">
-          <p class="location__street">ул. Большая Конюшенная,д.19/8</p>
+          <p class="location__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="location__city">Санкт-Петербург</p>
         </div>
           </div>
         </div>
       <div class="map">
-        <iframe class="google-map" title="Наш адрес на карте" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.3937344997485!2d30.317443167316902!3d59.939406907689545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1562685480652!5m2!1sru!2sua" width="100%" height="362" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+        <iframe class="google-map" title="Наш адрес на карте" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.3937344997485!2d30.317443167316902!3d59.939406907689545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1562685480652!5m2!1sru!2sua" style="border: 0;" allowfullscreen></iframe>
       </div>
       </div>
       </section>

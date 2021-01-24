@@ -28,6 +28,8 @@
 
 .location__address {
   width: 140px;
+  font-size: 14px;
+  line-height: 20px;
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -41,18 +43,21 @@
 
   @media (min-width: $desktop-width) {
     text-align: start;
-    margin-left: 87px;
+    margin-left: 78px;
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .location__street {
-    margin: 0;
-  }
 
-  .location__city {
-    margin: 0;
+.location__street {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
   }
+}
+
+.location__city {
+  margin: 0;
 }
 
 .location__wrapper {
@@ -75,7 +80,7 @@
   padding: 28px 20px 30px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 89px 39px 72px;
+    padding: 65px 70px 55px 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,6 +88,7 @@
     bottom: 104px;
     left: 110px;
     background-color: $white;
+    padding: 40px 70px 55px 75px;
   }
 }
 
@@ -95,10 +101,8 @@
 .google-map {
   width: 100%;
   height: 362px;
-}
 
-@media (min-width: $tablet-width) {
-  .google-map {
+  @media (min-width: $tablet-width) {
     height: 400px;
   }
 }

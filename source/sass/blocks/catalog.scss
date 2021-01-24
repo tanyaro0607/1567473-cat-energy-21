@@ -164,3 +164,15 @@
 .catalog-item__photo {
   max-width: none;
 }
+
+.catalog {
+  margin: 0 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 70px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 80px 0;
+  }
+}

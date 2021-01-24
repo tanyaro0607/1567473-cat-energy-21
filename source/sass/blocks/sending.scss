@@ -1,22 +1,18 @@
 .sending__button {
   font-family: "Oswald", sans-serif;
-  padding: 14px 76px;
+  padding: 9px 76px;
   font-size: 16px;
   line-height: 20px;
   margin: 0 0 21px 0;
-}
 
-@media (min-width: $tablet-width) {
-  .sending__button {
-    padding: 14px 62px;
+  @media (min-width: $tablet-width) {
+    padding: 16px 64px;
     font-size: 20px;
     margin: 0 61px 0 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .sending__button {
-    padding: 13px 193px;
+  @media (min-width: $desktop-width) {
+    padding: 16px 207px;
     margin: 0 81px 0 0;
   }
 }
@@ -25,20 +21,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-@media (min-width: $tablet-width) {
-  .sending {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
     margin: 0 0 72px 0;
     padding: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .sending {
+  @media (min-width: $desktop-width) {
     margin: 0 0 82px 0;
     display: flex;
     flex-direction: row;
@@ -53,5 +44,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    font-size: 16px;
+    line-height: 16px;
   }
 }

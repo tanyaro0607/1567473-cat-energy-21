@@ -17,9 +17,16 @@
 
 .goals {
   font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   padding: 0;
   margin: 24px 0 0 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -28,7 +35,8 @@
     position: absolute;
     border-bottom: 1px solid $neutral-grey;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    left: -21px;
   }
 
   .goals::after {
@@ -36,7 +44,8 @@
     position: absolute;
     border-top: 1px solid $neutral-grey;
     top: 0;
-    width: 100%;
+    width: 100vw;
+    left: -21px;
   }
 
   .goals {
@@ -63,7 +72,7 @@
 }
 
 .goals__item:not(:last-child) {
-  padding-bottom: 13px;
+  padding-bottom: 9px;
 }
 
 .goals__item input[type="radio"] {
@@ -76,7 +85,6 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
-    margin-right: 20px;
   }
 }
 

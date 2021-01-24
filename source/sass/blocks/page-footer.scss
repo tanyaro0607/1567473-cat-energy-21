@@ -1,6 +1,9 @@
 //Footer
 .page-footer {
   background-color: $grey;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
 }
 
 .social__list {
@@ -13,7 +16,11 @@
   width: 124px;
 
   @media (max-width: $mobile-width-only) {
-    margin: 20px auto 20px auto;
+    margin: 20px auto 15px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
   }
 }
 
@@ -36,7 +43,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    margin: 47px 110px;
+    margin: 44px 110px;
   }
 }
 
@@ -72,7 +79,7 @@
     border-bottom: 1px solid $grey-light-neutral;
     width: 100%;
     text-align: center;
-    padding-bottom: 29px;
+    padding-bottom: 27px;
   }
 
   .page-footer__social {
@@ -81,6 +88,6 @@
   }
 
   .page-footer__copyright {
-    margin-top: 22px;
+    margin-top: 18px;
   }
 }
