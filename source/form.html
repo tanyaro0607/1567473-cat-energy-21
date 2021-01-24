@@ -54,7 +54,7 @@
           <input id="questionnaire-weight" type="number" name="weight" min="0" max="100" step="0.1" placeholder="7">
         </p>
         <p class="questionnaire__item">
-          <label for="questionnaire-age">Возраст(лет):</label>
+          <label for="questionnaire-age">Возраст (лет):</label>
           <input id="questionnaire-age" type="number" name="age" min="0" max="100" step="1" placeholder="7">
         </p>
         </fieldset>
@@ -77,7 +77,11 @@
         </fieldset>
       </div>
         <fieldset class="registration__personal-information personal-information">
-          <legend class="registration__block-title personal-information__title">Контактные данные (владельца кота)</legend>
+          <legend class="registration__block-title personal-information__title">
+            <div class="personal-information__line registration__line"></div>
+            <span>Контактные данные (владельца кота)</span>
+            <div class="personal-information__line registration__line"></div>
+          </legend>
           <ul class="personal-information__list">
           <li class="personal-information__item">
             <label class="personal-information__email" for="window__email">E-mail:*</label>
@@ -91,7 +95,7 @@
           <li class="personal-information__item">
             <label class="personal-information__phone" for="window__phone">Телефон:*</label>
             <div class="personal-information__window window">
-            <input id="window__phone" type="tel" name="phone" placeholder="8(960)900-60-90">
+            <input id="window__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
             <a href="#" class="window__call">
               <img src="img/phone.svg" alt="Иконка Телефон">
             </a>
@@ -100,11 +104,19 @@
         </ul>
         </fieldset>
         <fieldset class="registration__comments comments">
-          <legend class="registration__block-title comments__title"> Комментарии</legend>
+          <legend class="registration__block-title comments__title">
+            <div class="comments__line registration__line"></div>
+            <span>Комментарии</span>
+            <div class="comments__line registration__line"></div>
+          </legend>
           <textarea class="comments__slogan" name="comment" cols="40" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="registration__optional optional">
-          <legend class="registration__block-title optional__title">Дополнительно</legend>
+          <legend class="registration__block-title optional__title">
+            <div class="optional__line registration__line"></div>
+            <span>Дополнительно</span>
+            <div class="optional__line registration__line"></div>
+          </legend>
           <ul class="optional__list">
             <li class="optional__item">
               <input class="optional__input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>

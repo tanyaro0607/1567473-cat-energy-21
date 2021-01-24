@@ -10,17 +10,14 @@
   text-transform: uppercase;
   color: $darkgrey;
   font-family: "Oswald", sans-serif;
-  padding-left: 15px;
   font-size: 16px;
   line-height: 18px;
-  padding-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .comments ::placeholder {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 19px;
   }
 }
 
@@ -28,18 +25,33 @@
   text-transform: uppercase;
   padding: 0;
   border: 1px solid $neutral-grey;
-  width: 100%;
   display: block;
-  height: 150px;
+  height: 130px;
   margin: 37px 0 22px 0;
 
   @media (min-width: $tablet-width) {
-    height: 174px;
+    height: 154px;
     margin: 76px 0 63px 0;
   }
 
   @media (min-width: $desktop-width) {
-    height: 174px;
     margin: 76px 0 65px 0;
+  }
+}
+
+.comments textarea {
+  text-transform: uppercase;
+  color: $darkgrey;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px 10px 10px 14px;
+  width: calc(100% - 24px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 10px 10px 19px;
+    width: calc(100% - 29px);
   }
 }

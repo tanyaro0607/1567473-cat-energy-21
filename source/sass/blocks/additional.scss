@@ -1,30 +1,42 @@
 .additional__wrapper {
-  margin: 0 20px;
+  margin: 32px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    margin: 80px 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 79px 0 110px;
+    margin: 79px 79px 0 110px;
+  }
+}
+
+.additional__title h2 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .additional__title {
-  padding: 19px 0 29px 20px;
+  padding: 0 0 0 20px;
   margin: 0;
   color: $black;
+  position: relative;
+  z-index: 1;
+
 
   @media (min-width: $tablet-width) {
-    padding: 69px 0 80px 36px;
-    font-size: 36px;
-    line-height: 36px;
+    padding: 0 0 0 32px;
     margin: 0 0 0 36px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 80px 0 80px 110px;
+    padding: 0 0 0 110px;
   }
 }
 
@@ -32,13 +44,12 @@
   padding: 0 0 17px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 21px 0 27px 0;
-    margin: 0 38px 0 38px;
+    padding: 23px 0 0 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0 10px 0;
-    margin: 0;
+    padding: 0;
   }
 }
 
@@ -64,7 +75,6 @@
   margin: 0;
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     margin: 0 0 86px 0;
     border: none;
   }
@@ -87,6 +97,7 @@
     grid-template-columns: 1fr 1fr;
     margin: 0;
     align-items: center;
+    padding: 0 38px 0 0;
   }
 }
 
@@ -96,12 +107,14 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $lightgrey;
+    padding: 24px 38px 28px 38px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
     border: none;
+    padding: 16px 0 17px 0;
   }
 }
 
@@ -117,11 +130,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 27px 0 0 38px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 26px 0 26px 0;
+    margin: 0;
   }
 }
 
@@ -136,7 +145,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin: 0 38px 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -157,6 +169,55 @@
   display: block;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
+
+.additional__line {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 100vw;
+  left: 0;
+  height: 2px;
+  background-color: $green;
+  z-index: -2;
+
+  @media (min-width: $tablet-width) {
+    left: -36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+  }
+}
+
+.additional__title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 2;
+  width: 280px;
+  left: -20px;
+  height: 30px;
+  background-color: $white;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+    width: 394px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 70px;
+    width: 414px;
+  }
 }

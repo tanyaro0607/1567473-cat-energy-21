@@ -60,6 +60,8 @@
   }
 }
 
+/*
+
 .registration__block-title::after {
   content: "";
   position: absolute;
@@ -88,6 +90,41 @@
   width: calc(100% + 40px);
   left: -20px;
   height: 50px;
+  background-color: $white;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    left: -40px;
+    width: calc(100% + 80px);
+  }
+}*/
+
+.registration__line {
+  height: 2px;
+  background-color: $green;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  z-index: -2;
+
+  @media (min-width: $tablet-width) {
+    left: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -110px;
+  }
+}
+
+.registration__block-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 2;
+  width: calc(100% + 40px);
+  left: -20px;
+  height: 36px;
   background-color: $white;
   z-index: -1;
 
