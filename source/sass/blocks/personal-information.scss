@@ -139,12 +139,6 @@
   }
 }
 
-.personal-information__title {
-  @media (max-width: $mobile-width-only) {
-    width: 186px;
-  }
-}
-
 .personal-information__line {
   @media (max-width: $mobile-width-only) {
     top: 30%;
