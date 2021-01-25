@@ -14,12 +14,14 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
+    "gulp-svgstore": "^7.0.1",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "postcss": "8.1.7",
     "postcss-csso": "^5.0.0",
     "stylelint": "13.7.2",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint-config-htmlacademy": "0.1.4",
+    "svgstore": "^3.0.0-2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -43,5 +45,8 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0"
   }
 }
