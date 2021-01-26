@@ -155,7 +155,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 25px 0 0;
+    margin: 0 23px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -226,4 +226,11 @@
 
 .programs-list__further svg {
   width: 32px;
+}
+
+.programs-list__icon {
+  &:hover,
+  &:focus {
+    width: 35px;
+  }
 }

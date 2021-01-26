@@ -14,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   width: 124px;
+  padding-right: 10px;
 
   @media (max-width: $mobile-width-only) {
     margin: 20px auto 15px auto;
@@ -25,18 +26,18 @@
 }
 
 .social__icon {
+  fill: $grey;
+
   &:hover,
   &:focus {
-    fill: $green;
+    stroke: $green;
   }
 
   &:active {
     opacity: 0.3;
-    fill: $green;
+    stroke: $green;
   }
-}
 
-.social__icon {
   @media (min-width: $tablet-width) {
     &--vkontakte {
       width: 33px;
@@ -88,14 +89,13 @@
   flex-direction: row;
   align-items: flex-end;
   width: 100%;
-  display: flex;
   text-decoration: none;
   color: $darkgrey;
 
   &:active {
     opacity: 0.3;
   }
-} 
+}
 
 .copyright__name {
   @media (min-width: $tablet-width) {
@@ -109,7 +109,6 @@
     fill: $green;
   }
 }
-
 
 @media (max-width: $mobile-width-only) {
   .page-footer__copyright {
