@@ -10,17 +10,6 @@
   }
 }
 
-.additional__title h2 {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-
 .additional__title {
   padding: 0 0 0 20px;
   margin: 0;
@@ -30,13 +19,12 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 32px;
-    margin: 0 0 0 36px;
+    margin: 0 0 0 30px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0 0 0 110px;
+    margin: 0 0 0 70px;
   }
 }
 
@@ -180,55 +168,21 @@
   }
 }
 
-/*
-.additional__line {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 50%;
-  width: 100vw;
-  left: 0;
-  height: 2px;
-  background-color: $green;
-  z-index: -2;
-
-  @media (min-width: $tablet-width) {
-    left: -36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 0;
-  }
-}
-
-.additional__title::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 280px;
-  left: -20px;
-  height: 30px;
-  background-color: $white;
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    left: 0;
-    width: 394px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 70px;
-    width: 414px;
-  }
-} */
-
 .additional__line:first-child {
   left: -112px;
-  min-width: 40px;
+  max-width: 70px;
 }
 
 .additional__line:last-child {
-  width: 100%;
+  width: calc(100% - 21px);
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% + 70px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100vw;
+  }
 }
 
 .additional__line {
@@ -239,14 +193,14 @@
   height: 2px;
   background-color: $green;
   z-index: -2;
-  left: 0;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
-    right: -30px;
+    left: -70px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 0;
+    right: -110px;
   }
 }
 
@@ -255,9 +209,20 @@
   max-width: 250px;
   background-color: white;
   padding-right: 22px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     max-width: 550px;
-    padding-right: 37px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 37px 0 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1000px;
+    padding: 0 40px 0 40px;
   }
 }

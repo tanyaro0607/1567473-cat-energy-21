@@ -164,7 +164,7 @@
     opacity: 0.6;
   }
 
-  &:focus {
+  &:active {
     opacity: 0.3;
   }
 
@@ -222,6 +222,15 @@
 .page-header__logo {
   display: block;
   padding: 6px 0 26px 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (max-width: $mobile-width-only) {
     padding: 11px 20px 24px 20px;
