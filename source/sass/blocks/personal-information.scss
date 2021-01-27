@@ -15,7 +15,7 @@
 }
 
 .personal-information__item {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -55,7 +55,7 @@
   height: 43px;
   width: 100%;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   padding-left: 14px;
@@ -86,7 +86,7 @@
 }
 
 .personal-information {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   border: none;
   padding: 0;
   margin: 0 0 23px 0;
@@ -103,7 +103,7 @@
 .personal-information__item::placeholder {
   text-transform: uppercase;
   color: $darkgrey;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
 

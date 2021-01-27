@@ -26,7 +26,7 @@
 }
 
 .social__icon {
-  fill: $grey;
+  fill: $grey-medium;
 
   &:hover,
   &:focus {
@@ -106,7 +106,7 @@
 .copyright__logo {
   &:hover,
   &:focus {
-    fill: $green;
+    stroke: $green;
   }
 }
 

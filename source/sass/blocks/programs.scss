@@ -4,7 +4,7 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -149,7 +149,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 400;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   margin: 0 15px 0 0;
 
   @media (min-width: $tablet-width) {
