@@ -1,5 +1,5 @@
 .comments {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   border: none;
   padding: 0;
   margin: 0;
@@ -9,7 +9,7 @@
 .comments ::placeholder {
   text-transform: uppercase;
   color: $darkgrey;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
 }
@@ -42,7 +42,7 @@
 .comments textarea {
   text-transform: uppercase;
   color: $darkgrey;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   padding: 10px 10px 10px 14px;
